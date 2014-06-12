@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <color name="gray">#ff708090</color>
+    <color name="gray_white">#ffc0c0c0</color>
+    <color name="cache_hint_color">#00000000</color>
+    <color name="tab_color">#848484</color>
+    <color name="nickname_color">#3c3c3c</color>
+    <color name="story_title_color">#666</color>
+    <color name="link_name_color">#578abb</color>
+
+</resources>

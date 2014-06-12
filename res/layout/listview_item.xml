@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="5.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+             >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text=""
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/story_title_color"
+                android:textSize="16.0sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvNickStart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text=""
+                    android:textColor="@color/tab_color"
+                    android:textSize="14.0sp" />
+
+                <TextView
+                    android:id="@+id/tvNickname"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/link_name_color"
+                    android:textSize="14.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.youqude.storyflow.ui.HorizontialListView
+            android:id="@+id/mHorizontialListView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp" >
+        </com.youqude.storyflow.ui.HorizontialListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.youqude.storyflow"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:name="StoryFlowApp" android:debuggable="false">
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait" 
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- qq -->
+        <!-- OAuth Version 2. 使用  WebView 辅助进行ImplicitGrant方式授权必须 -->
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- service -->
+        <service
+            android:enabled="true"
+            android:name="StoryFlowDataService" >
+        </service>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.StoryHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/tabTheme" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.StoryCameraActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.StorySelfActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.TodayHotActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.WeekHotActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.LatestStoryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.NewStoryFlowActivity"
+            android:screenOrientation="portrait" 
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.SearchStoryTitleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:name=".ui.MainActivity"
+            style="@android:style/Animation.Dialog"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.ShowStoryPicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.SelfPicActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.SelfStoryFlowActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.SelfLoveActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name=".ui.StorySelfSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

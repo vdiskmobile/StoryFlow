@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tab_right_selector"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/tab_textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:marqueeRepeatLimit="1"
+        android:singleLine="true"
+        android:textColor="@color/tab_color"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

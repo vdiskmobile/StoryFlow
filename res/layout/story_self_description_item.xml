@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        
+        <ImageView android:id="@+id/ivHeader"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_des_default"/>
+        
+         <TextView android:id="@+id/tvNickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ivHeader"
+            android:textColor="@color/nickname_color"
+            android:text="nickname"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        
+        <TextView android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/link_name_color"
+            android:text=""
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+        
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" android:gravity="center"
+        android:layout_marginTop="15dp">
+        
+        <ImageView android:id="@+id/ivPic" 
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="220dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/default_icon"/>
+        
+    </RelativeLayout>    
+        
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+        
+        <TextView android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:singleLine="false"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:text="description .................fjakfhbkdgjkdngkdngkldnsglknslkgnl"/>
+        
+    </RelativeLayout>    
+    
+        <RelativeLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="10dp">
+            
+               
+                <Button android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="喜欢"
+                android:textColor="@color/tab_color"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/btn_like"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dp"/>
+            <Button android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="操作"
+                android:textColor="@color/tab_color"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/btn_operation"
+                android:gravity="center_vertical|right"
+                android:paddingRight="15dp"/>
+               
+            
+        </RelativeLayout>
+        
+</LinearLayout>
