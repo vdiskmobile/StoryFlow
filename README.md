@@ -1,4 +1,4 @@
-StoryFlow
+故事流 v1.0
 =========
 
-develop for the third company
+故事流分享，此项目集成新浪微博和腾讯微博的分享功能，以及百度账号连接以及百度网盘上传功能
